@@ -1,0 +1,126 @@
+local args = {
+    [1] = "DarzethDoodads"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+wait(0.1)
+ 
+local args = {
+    [1] = "Wink"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+Wait(0.1)
+ 
+local args = {
+    [1] = "38217"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+Wait(0.1)
+ 
+local args = {
+    [1] = "Bopmaster"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+Wait(0.1)
+ 
+local args = {
+    [1] = "Cog"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+Wait(0.1)
+ 
+local args = {
+    [1] = "Connoisseur"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+Wait(0.1)
+ 
+local args = {
+    [1] = "Crawlers"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+Wait(0.1)
+ 
+local args = {
+    [1] = "Roof"
+}
+ 
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+ 
+Wait(0.3)
+ 
+local args = {
+    [1] = "Wax"
+}
+
+game:GetService("ReplicatedStorage").Events.PromoCodeEvent:FireServer(unpack(args))
+
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(15.1683349609375, 4.746882915496826, 67.57976531982422))
+wait(0.5)
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-374.25775146484375, 17.916837692260742, 493.4742431640625))
+wait(0.5)
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(132.24835205078125, 118.61807250976562, -63.141090393066406))
+wait(0.5)
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(79.67828369140625, 55.7901725769043, 401.663330078125))
+wait(0.5)
+
+wait(1)
+
+for i = 1,6 do
+
+
+local args = {
+    [1] = "Purchase",
+    [2] = {
+        ["Type"] = "MagicBean",
+        ["Amount"] = 1,
+        ["Category"] = "Eggs"
+    }
+}
+
+game:GetService("ReplicatedStorage").Events.ItemPackageEvent:InvokeServer(unpack(args))
+end
+
+wait(0.5)
+v = 0
+while v < 2000 do
+local args = {
+    [1] = {
+        ["Name"] = "Festive Bean"
+    }
+}
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-328.6700134277344, 65.5, -187.3489990234375))
+game:GetService("ReplicatedStorage").Events.PlayerActivesCommand:FireServer(unpack(args))
+v = v + 1
+print(v)
+end
+local a = 1
+repeat wait()
+    local args = {
+    [1] = {
+        ["Name"] = "Magic Bean"
+    }
+}
+game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-328.6700134277344, 65.5, -187.3489990234375))
+game:GetService("ReplicatedStorage").Events.PlayerActivesCommand:FireServer(unpack(args))
+a = a + 1
+print(a)
+until a >= 1000
+game:GetService("Players").LocalPlayer:kick()
+task.wait(3)
+game:Shutdown()
+
+
